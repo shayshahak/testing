@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: whalephp
-        image: testacr03.azurecr.io/testphp:latest
+        image: ${{ secrets.REGISTRY_NAME }}.azurecr.io/testimage:${{ github.sha }}
         imagePullPolicy: Always
         ports:
         - containerPort: 80
