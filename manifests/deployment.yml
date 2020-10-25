@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: whalephp
-        image: nadavacr.azurecr.io/testimage
+        image: acr4fun01.azurecr.io/testimage
         imagePullPolicy: Always
         ports:
         - containerPort: 80
